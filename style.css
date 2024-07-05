@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+body{
+    background-color: rgb(232, 238, 238);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.sub-container {
+    display: grid;
+    width: min(95vw, 31.25em);
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 1.875em;
+    padding: 2em;
+    background-image: linear-gradient(180deg, #9e81ff 20%, #fff);
+    box-shadow: 0 1em 2em rgba(0, 0, 0, 0.3);
+    border-radius: 0.8em;
+}
+.input-container{
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    padding: 20px;
+}
+
+.input-container h1 {
+    padding-bottom: 15px;
+    color: #fff;
+}
+
+.input-container input{
+    border: none;
+    outline: none;
+    padding: 12px;
+    margin-block: 12px;
+    border-radius: 30px;
+    font-size: 16px;
+    background-color: #f1f8f9;
+}
+
+.input-container input[type="text"]{
+    width: 70%;
+}
+
+.input-container input:focus {
+    border: 1px solid #9e81ff;
+}
+
+.input-container button{
+    background-color: #8863ff;
+    color: #fff;
+    font-weight: 700;
+    margin-left: 8px;
+    border-radius: 30px;
+    cursor: pointer;
+    padding: 12px 24px;
+}
+
+.input-container button:hover{
+    background-color: #ffffff;
+    color: #111;
+}
+
+button {
+    padding: 10px;
+}
+
+ul{
+    width: 100%;
+    max-width: 450px;
+    /* display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; */
+}
+
+ul li{
+    list-style-type: none;
+    cursor: pointer;
+    margin-block-end: 12px;
+    border-radius: 30px;
+    border: 0.125px solid #a19f9f;
+    padding: 6px 12px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.5s;
+}
+
+ul li:nth-child(odd) {
+    border: 1px solid #ff8196;
+}
+ul li:nth-child(even) {
+    border: 1px solid #9e81ff;
+}
+
+ul li p{
+    flex-grow: 1;
+    padding: 2px;
+}
+
+ul input[type="checkbox"] {
+    position: relative;
+    appearance: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 12px;
+    border: 2px solid #e1e1e1;
+}
+ul input[type="checkbox"]:before {
+    content: "";
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+ul input[type="checkbox"]:checked {
+    background-color: #8863ff;
+    border-color: #8863ff;
+}
+ul input[type="checkbox"]:checked:before {
+    position: absolute;
+    content: "\f00c";
+    color: #fff;
+    font-size: 0.8em;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+ul input {
+    border: none;
+    border-bottom: 1px solid #9e81ff;
+    outline: none;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.task-text {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.task-text.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+button {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: none;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 8px;
+    
+}
+
+button.delete {
+    color: #ff0000;
+}
+button.edit,
+button.save {
+    color: blue;
+}
+
+button.delete:hover {
+    background-color: #ff000040;
+    border-radius: 30px;
+}
+button.edit:hover,
+button.save:hover {
+    background-color: #0000ff44;
+    border-radius: 30px;
+}
+
